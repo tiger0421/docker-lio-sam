@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl https://raw.githubusercontent.com/tiger0421/docker-lego-loam/master/install.sh > /tmp/install.sh
+curl https://raw.githubusercontent.com/tiger0421/docker-lio-sam/master/install.sh > /tmp/install.sh
 chmod +x /tmp/install.sh
 
 bash /tmp/install.sh
