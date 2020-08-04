@@ -23,6 +23,7 @@ RUN wget -O /root/Downloads/gtsam.zip https://github.com/borglab/gtsam/archive/4
 
 WORKDIR /root/catkin_ws/src
 COPY docker-entrypoint.sh /tmp
+RUN chmod +x /tmp/docker-entrypoint.sh
 ENTRYPOINT ["/tmp/docker-entrypoint.sh"]
 CMD ["/bin/bash"]
 WORKDIR /root
