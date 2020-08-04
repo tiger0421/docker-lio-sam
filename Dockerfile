@@ -15,7 +15,7 @@ RUN apt update && \
 
 WORKDIR /root/Downloads
 RUN wget -O /root/Downloads/gtsam.zip https://github.com/borglab/gtsam/archive/4.0.2.zip && \
-    cd unzip gtsam.zip -d /root/Downloads/ && \
+    unzip gtsam.zip -d /root/Downloads/ && \
     cd /root/Downloads/gtsam-4.0.2/ && \
     mkdir build && cd build && \
     cmake -DGTSAM_BUILD_WITH_MARCH_NATIVE=OFF .. && \
