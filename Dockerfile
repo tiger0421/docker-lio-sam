@@ -8,6 +8,9 @@ RUN apt update && \
         ros-$(ls /opt/ros)-pcl-ros \
         ros-$(ls /opt/ros)-nmea-msgs \
         ros-$(ls /opt/ros)-libg2o \
+        ros-melodic-navigation \
+        ros-melodic-robot-robot-localization \
+        ros-melodic-robot-state-publisher \
     && \
     apt autoremove -y && \
     apt clean && \
